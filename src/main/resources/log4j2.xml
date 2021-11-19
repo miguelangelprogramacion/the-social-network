@@ -1,0 +1,21 @@
+<Configuration status="debug"
+	name="miguelangelprogramacion" packages="">
+	 <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+        </Console>
+        <Console name="consoleInfo" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="%msg" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="debug" additivity="false">
+            <AppenderRef ref="console" />
+        </Root>
+        <Root level="info" additivity="false">
+            <AppenderRef ref="consoleInfo" />
+        </Root>
+    </Loggers>
+</Configuration>
